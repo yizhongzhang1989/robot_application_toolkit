@@ -1,0 +1,10 @@
+Robot Application Toolkit
+Copyright 2026 Robot Application Toolkit contributors
+
+New toolkit code is licensed under Apache License 2.0; see LICENSE.
+
+third_party/3dconnexion_ros2 is an independently versioned Git submodule:
+https://github.com/yizhongzhang1989/3dconnexion_ros2
+Its original license notices are preserved. The spacemouse package declares MIT;
+the spacenav driver derives from ros-drivers/joystick_drivers and retains BSD
+notices in its sources. The toolkit license does not relicense these components.

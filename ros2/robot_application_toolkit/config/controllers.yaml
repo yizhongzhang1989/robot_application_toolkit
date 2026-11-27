@@ -1,0 +1,20 @@
+# Inventory for documentation/deployment; launch does not auto-connect by model.
+# Addresses below are simulation examples, not detected hardware endpoints.
+interface_version: '1.0'
+controllers:
+  nero:
+    repository: ~/Documents/nero_control
+    maturity: development
+    namespace: /nero
+    simulation_url: http://127.0.0.1:18089
+    namespace_cli: --ros-namespace
+  piper:
+    repository: ~/Documents/piper_control
+    maturity: testing
+    namespace: /robot
+    simulation_url: http://127.0.0.1:18088
+    namespace_cli: null  # Current CLI fixes /robot; RosBridge accepts namespace.
+  ur:
+    maturity: planned
+  duco:
+    maturity: planned

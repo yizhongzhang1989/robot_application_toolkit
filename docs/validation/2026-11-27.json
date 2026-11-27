@@ -1,0 +1,326 @@
+{
+  "date": "2026-11-27",
+  "timezone": "Asia/Shanghai",
+  "reference_revisions": {
+    "3dconnexion_ros2": "49d3d57081dfad77d05117ad6d97f4b1fa24135e",
+    "spacenavd": "22d9730719fe509780f19d25d40687adb16d0baf",
+    "nero_control": "0f12e7b3817f6a4f382e0f521b590d41782b5e73",
+    "piper_control": "3ed78f8acaedba0de1ac6444fbbfffb91c03e73b"
+  },
+  "scope": "Input acquisition, ROS control workflow and system installation; not motion-quality acceptance.",
+  "physical_input": {
+    "count": 44198,
+    "valid": true,
+    "rate_hz": 982.4914764861367,
+    "axis_ranges": [
+      [
+        -0.9257143139839172,
+        0.7057142853736877
+      ],
+      [
+        -1.0,
+        0.9142857193946838
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        1.0
+      ]
+    ],
+    "buttons_observed": [
+      0
+    ],
+    "button0_press": true,
+    "button0_release": true,
+    "max_gap_s": 0.056326509977225214,
+    "final_axes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "all_six_axes_moved": true
+  },
+  "simulation_workflow": {
+    "passed": true,
+    "measured_tcp_delta": [
+      -1.7200772972625344e-08,
+      2.1635221600369015e-09,
+      0.0029030151552347228
+    ],
+    "max_joint_speed": 0.012406884864215378,
+    "command_count": 154,
+    "final_mode": "idle",
+    "final_errors": []
+  },
+  "hardware_workflow": {
+    "mode": "require_deadman=true",
+    "input_linear_speed_m_s": 0.002,
+    "max_measured_speed_rejection_rad_s": null,
+    "summary": {
+      "passed": true,
+      "measured_tcp_delta": [
+        0.0003707287431404249,
+        3.8177613176362465e-06,
+        0.0025267651837496408
+      ],
+      "max_joint_speed": 0.116,
+      "command_count": 154,
+      "final_mode": "idle",
+      "final_errors": []
+    },
+    "phases": [
+      {
+        "name": "connect_idle",
+        "elapsed": 0.5025985399843194,
+        "before_mode": "idle",
+        "after_mode": "idle",
+        "measured_tcp_delta": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "startup_held",
+        "elapsed": 0.20360289700329304,
+        "before_mode": "idle",
+        "after_mode": "idle",
+        "measured_tcp_delta": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "release_to_arm",
+        "elapsed": 0.1570161950075999,
+        "before_mode": "idle",
+        "after_mode": "idle",
+        "measured_tcp_delta": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "up_then_release",
+        "elapsed": 0.6040462679811753,
+        "before_mode": "idle",
+        "after_mode": "servo_twist",
+        "measured_tcp_delta": [
+          0.0005640246316758746,
+          5.808255404698634e-06,
+          0.0013860467461939696
+        ]
+      },
+      {
+        "name": "button_release_stop",
+        "elapsed": 1.2037679379573092,
+        "before_mode": "servo_twist",
+        "after_mode": "idle",
+        "measured_tcp_delta": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "up_then_disconnect",
+        "elapsed": 0.5044242030126043,
+        "before_mode": "idle",
+        "after_mode": "servo_twist",
+        "measured_tcp_delta": [
+          -0.00047284397711971904,
+          -4.869257555393039e-06,
+          -9.182628524229131e-07
+        ]
+      },
+      {
+        "name": "source_timeout_stop",
+        "elapsed": 1.2054817840107717,
+        "before_mode": "servo_twist",
+        "after_mode": "idle",
+        "measured_tcp_delta": [
+          9.615769625070936e-05,
+          9.902329032879936e-07,
+          0.0007230956085628182
+        ]
+      },
+      {
+        "name": "reconnect_held",
+        "elapsed": 0.20397718797903508,
+        "before_mode": "idle",
+        "after_mode": "idle",
+        "measured_tcp_delta": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "release_after_reconnect",
+        "elapsed": 0.1532124350196682,
+        "before_mode": "idle",
+        "after_mode": "idle",
+        "measured_tcp_delta": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "rearmed_motion",
+        "elapsed": 0.20458808197872713,
+        "before_mode": "idle",
+        "after_mode": "servo_twist",
+        "measured_tcp_delta": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "final_release",
+        "elapsed": 1.2044618310173973,
+        "before_mode": "servo_twist",
+        "after_mode": "idle",
+        "measured_tcp_delta": [
+          0.00018339039233356003,
+          1.8885305650426579e-06,
+          0.0004185410918452759
+        ]
+      }
+    ]
+  },
+  "initial_speed_check": {
+    "summary": {
+      "passed": false,
+      "measured_tcp_delta": [
+        -8.423573136084883e-05,
+        -8.673735681502537e-07,
+        0.0026367771119523986
+      ],
+      "max_joint_speed": 0.09,
+      "command_count": 107,
+      "final_mode": "idle",
+      "final_errors": []
+    },
+    "failure": "RuntimeError('Measured joint speed exceeded 0.08 rad/s')",
+    "threshold_rad_s": 0.08
+  },
+  "post_workflow_stop": {
+    "samples": 100,
+    "all_idle": true,
+    "all_ready": true,
+    "max_feedback_speed_rad_s": 0.0,
+    "max_joint_position_range_rad": 0.0
+  },
+  "system_input": {
+    "samples": 2992,
+    "rate_hz": 997.0444110060312,
+    "last_axes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "last_buttons": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "publisher_count": 1
+  },
+  "system_install": {
+    "teleop": {
+      "status": "neutral",
+      "output": "/robot/servo_twist",
+      "require_deadman": false,
+      "linear_speed": 0.02,
+      "angular_speed": 0.1,
+      "subscribers": 1
+    },
+    "robot": {
+      "enabled": true,
+      "command_ready": true,
+      "mode": "idle",
+      "errors": []
+    },
+    "command_publishers": 1,
+    "controller_subscribers": 1,
+    "service_active": "active",
+    "service_enabled": "enabled",
+    "driver_version": "spacenavd v1.3.1"
+  },
+  "raw_artifacts": [
+    {
+      "file": "physical_input.json",
+      "sha256": "350293e1451c9855905f8e9ff215f29061796262be027b31aa615260958fcd60"
+    },
+    {
+      "file": "piper_sim_workflow.json",
+      "sha256": "9e2f9603c8da6df51d025e2bec3cbe304a13266fcfa7ce54ab7506ae12976bc0"
+    },
+    {
+      "file": "piper_hardware_workflow.json",
+      "sha256": "1cdda8679b46f916cd52fcadddd50411ceb12085925dd02d83c90111e5fc08f9"
+    },
+    {
+      "file": "piper_hardware_probe.json",
+      "sha256": "92ee2722b0dc304cd8c851ef62eaf62b072e4d20a855e9af2ebd9760ffb3be01"
+    },
+    {
+      "file": "post_workflow_stop.json",
+      "sha256": "7de1864f51d7b5539b8eaf4ce3cd71db2898c91558b81602ea367c9c7a8ff460"
+    },
+    {
+      "file": "system_service_input.json",
+      "sha256": "18c6658aefdb4f605d144d6807072e99b231f6f96eb7db2993c9d04c78c5878c"
+    },
+    {
+      "file": "system_install_result.json",
+      "sha256": "2d58747f97362e643eb3531ce1e22b4fb5ecf857122f991fb454bcf6a6d09121"
+    }
+  ],
+  "commit_readiness_checks": {
+    "full_ros_and_controller_tests_passed": 34,
+    "ros_python": "3.10.12",
+    "core_python": "3.12.16",
+    "ruff_version": "0.14.7",
+    "ros_packages_built": [
+      "spacenav",
+      "spacemouse",
+      "robot_application_toolkit"
+    ],
+    "sdist_and_wheel_built": true,
+    "wheel_installed_without_ros": true
+  }
+}
